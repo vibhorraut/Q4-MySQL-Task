@@ -71,4 +71,4 @@ CREATE INDEX idx_order_items_order_id ON order_items(order_id);
 
 - PHP 7.4 or higher
 - MySQL 5.7 or higher
-- Web server (Apache, Nginx, etc.)
+- Web server (Xampp,Apache, Nginx, etc.)
