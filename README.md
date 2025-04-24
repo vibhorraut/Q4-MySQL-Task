@@ -1,3 +1,10 @@
+![Screenshot 2025-04-24 170529](https://github.com/user-attachments/assets/9ac3296f-d422-4073-adb2-d07fda92ce99)
+
+![Screenshot 2025-04-24 170558](https://github.com/user-attachments/assets/48f8d1cb-5b37-4cb4-97be-b2ff136e8fa3)
+
+![Screenshot 2025-04-24 170649](https://github.com/user-attachments/assets/c9d2cd53-580f-49f7-9b0a-e23bb8342174)
+
+
 # High-Value Customer Dashboard
 
 This application provides a user interface to view the results of our optimized MySQL query that identifies high-value customers who have made at least 3 purchases in the last 6 months.
@@ -65,6 +72,14 @@ For optimal performance, run the index creation statements in `performance_impro
 CREATE INDEX idx_orders_order_date ON orders(order_date);
 CREATE INDEX idx_orders_user_id ON orders(user_id);
 CREATE INDEX idx_order_items_order_id ON order_items(order_id);
+
+How to Use
+1.	Click "Create New Order" from the main dashboard, or
+2.	Click "Create Order for This Customer" from a customer's details page
+3.	Select products, adjust quantities and prices as needed
+4.	Click "Create Order" to submit
+The system will validate all inputs, create the order in the database, and provide confirmation when complete.
+This order form complements the customer dashboard by allowing you to not only view high-value customers but also create new orders for them, helping to increase their lifetime value.
 ```
 
 ## Requirements
